@@ -57,6 +57,8 @@
                   <?php printf( __( 'Filed under: %1$s', 'bonestheme' ), get_the_category_list(', ') ); ?>
 
                   <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+                  
+                  <?php printf( __( 'Licensed under: %1$s %2$s', 'bonestheme' ), get_post_meta( get_the_ID(), '_hello_licenses_id', true ), get_post_meta( get_the_ID(), '_hello_licenses_description', true ) ); ?>
 
                 </footer> <?php // end article footer ?>
 
